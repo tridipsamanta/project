@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator by tridip</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(9, 24, 39);
+            width: 100%;
+            height: 750px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 750px;
+            box-shadow: 0px 0px 15px 5px rgb(255, 254, 254);
+            align-items: center;
+            margin: 30px auto;
+            background-color: rgb(3, 14, 79);
+            border-radius: 20px;
+            padding: 15px;
+            border: none;
+        }
+        .row {
+            width: 500px;
+            height: 400px;
+            position: relative;
+            top: 70px;
+            margin-left: 10px;
+        }
+        input {
+            width: 450px;
+            height: 160px;
+            font-size: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 30px;
+            box-shadow: -2px -2px 15px rgb(252, 252, 251);
+            background-color: transparent;
+            backdrop-filter: blur(2px);
+            text-align: right;
+            position: absolute;
+            color: white;
+            top: 95px;
+            left: 500px;
+            border: 3px solid rgb(1, 9, 3);
+        }
+        button {
+            width: 80px;
+            height: 80px;
+            font-size: 30px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            cursor: pointer;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 50%;
+            box-shadow: -5px -5px 15px rgb(252, 252, 251);
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        .t{
+            background-color: gray;
+        }
+        button:hover {
+            background-color: rgb(69, 184, 242);
+        }
+        .s{
+            background-color: rgb(241, 154, 40);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="text" placeholder="0">
+        <div class="row">
+            <button class="t">AC</button>
+            <button>7</button>
+            <button>
+                4
+            </button>
+            <button>1</button>
+            <button>%</button>
+        </div>
+        <div class="row">
+            <button class="t">DEL</button>
+            <button>8</button>
+            <button>5</button>
+            <button>2</button>
+            <button>0</button>
+        </div>
+        <div class="row">
+            <button class="t">+/-</button>
+            <button>9</button>
+            <button>6</button>
+            <button>3</button>
+            <button>.</button>
+        </div>
+        <div class="row">
+            <button class="s">/</button>
+            <button class="s">*</button>
+            <button class="s">-</button>
+            <button class="s">+</button>
+            <button class="s">=</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
